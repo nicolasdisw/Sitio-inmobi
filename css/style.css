@@ -225,6 +225,7 @@ i {
         height: 500px;
         width: 400px;
         object-fit: cover;
+        padding-top: 50px;
     }
 }
 
@@ -307,12 +308,29 @@ i {
     font-size: 70px;
     font-weight: 800;
 }
+@media(max-width:768px){
+    .h3-sec4{
+        color: #fff;
+        font-size: 50px;
+        font-weight: 800;
+    }
+}
 .p-sec4{
-    color: #fff;
+    color: #ddb756;
     font-size: 16px;
     margin-left: 15px;
+    font-weight: 600;
+}
+@media(max-width:768px){
+    .p-sec4{
+        color: #ddb756;
+        font-size: 16px;
+        margin-left: 15px;
+    }
+    
 }
 /* FIN SECCION 4 */
+
 
 /* SECCION 5 */
 
@@ -322,6 +340,14 @@ i {
 .box-5{
     display: flex;
     justify-content: space-between;
+}
+@media(max-width:768px){
+    .box-5 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 .house-1{
     background-image: linear-gradient(
@@ -334,10 +360,7 @@ i {
         height: 500px;
         width: 100%;
         padding: 25px;
-        transition: transform 0.2s ease;
-        &:hover {
-            transform: scale(0.9);       
-}
+
 }
 .house-2{
     background-image: linear-gradient(
@@ -350,12 +373,7 @@ i {
         height: 500px;
         width: 100%;
         padding: 25px;
-        transition: transform 0.2s ease;
-
-        &:hover {
-            transform: scale(0.9);}
 }
-
 .house-3{
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),
@@ -367,10 +385,6 @@ i {
         height: 500px;
         width: 100%;
         padding: 25px;
-        transition: transform 0.2s ease;
-
-        &:hover {
-            transform: scale(0.9);}
 }
 .house-4{
     background-image: linear-gradient(
@@ -383,12 +397,8 @@ i {
         height: 500px;
         width: 100%;
         padding: 25px;
-        transition: transform 0.2s ease;
+}
 
-        &:hover {
-            transform: scale(0.9);
-}
-}
 .house-5{
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),
@@ -400,11 +410,6 @@ i {
         height: 500px;
         width: 100%;
         padding: 25px;
-        transition: transform 0.2s ease;
-
-        &:hover {
-            transform: scale(0.9);
-        }
 }
 .txt{
     position: relative;
@@ -417,7 +422,6 @@ i {
     color: #fff;
     font-size: 35px;
 }
-
 .txt p{
     font-size: 16px;
     color: #e0e0e0;
@@ -425,6 +429,17 @@ i {
     top: 400px;
     left: 0;
     rotate: 270deg;
+    border-radius: 3%;
+    border: 1px solid #fff;
+    padding: 10px;
+    background-color: #e0e0e04d;
+    &:hover{
+        background-color: #ba8d61;
+    }
+}
+.txt p a{
+    text-decoration: none;
+    color: #fff;
 }
 
 /* FIN SECCION5 */
@@ -467,6 +482,7 @@ i {
 
 .pie-pagina .grupo-1 .box h2 {
     color: #fff;
+    text-decoration: underline;
     margin-bottom: 25px;
     font-size: 20px;
 }
