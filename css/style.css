@@ -84,6 +84,13 @@ body {
 @media(max-width:768px){
     .box-seccion1 {
         text-align: center;
+        padding-top: 350px;
+    }
+}
+@media(max-width:480px){
+    .box-seccion1 {
+        text-align: center;
+        padding-top: 190px;
     }
 }
 .h1-seccion1 {
@@ -199,6 +206,14 @@ body {
         font-family: 'Oswald', sans-serif;
     }
 }
+@media(max-width:480px){
+    .info-text {
+        font-size: 10px;
+        padding: 6px 0;
+        font-weight: 100;
+        font-family: 'Oswald', sans-serif;
+    }
+}
 i {
     color: #000000;
     &:hover{
@@ -214,7 +229,6 @@ i {
 .seccion3 {
     background-color: #000000e4;
 }
-
 .caja-seccion3 {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -264,6 +278,14 @@ i {
         padding-top: 50px;
     }
 }
+@media(max-width:600px){
+    .img-s3 {
+        width: 300px;
+        object-fit: cover;
+        padding-top: 50px;
+    }
+}
+
 .h2-seccion3 {
     text-decoration: underline;
     color: #fff;
@@ -455,7 +477,6 @@ i {
         width: 100%;
         padding: 25px;
 }
-
 .house-5{
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),
