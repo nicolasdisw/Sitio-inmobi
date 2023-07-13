@@ -16,7 +16,6 @@ body {
     width: 100%;
     background-color: #000000e4;
 }
-
 .navbar-brand {
     color: #fff;
     font-weight: 800;
@@ -25,7 +24,6 @@ body {
         color: #ba8d61;
     }
 }
-
 .navbar-nav .nav-item a {
     color: #fff;
     font-weight: 800;
@@ -35,24 +33,38 @@ body {
         color: #f9b94e;
     }
 }
-
 .navbar-collapse {
     flex-grow: inherit;
 }
-
 /* FIN-HEADER */
 
 
 /* SECCION 1 */
 
-.seccion1 {
-    height: 500px;
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url("../assets/images/bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+.container-video{
+    position: relative;
+    height: 100vh;
+
 }
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -4;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: brightness(0.5);
+}
+.video-container video{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50% -50%);
+    
+}
+
 .caja-seccion1 {
     display: flex;
     justify-content: start;
@@ -76,8 +88,9 @@ body {
 }
 .h1-seccion1 {
     font-size: 45px;
-    padding: 0px 20px;
+    padding: 10px 20px;
     font-weight: 700;
+    text-decoration: overline #c4905c;
 }
 @media(max-width:768px){
     .h1-seccion1 {
@@ -85,6 +98,12 @@ body {
         padding: 0px 20px;
         font-weight: 600;
     }
+}
+@media(max-width:480px){
+    .h1-seccion1 {
+        padding: 10px 20px;
+    }
+
 }
 .h2-seccion2 {
     font-size: 30px;
@@ -99,7 +118,7 @@ body {
 .p-seccion1 {
     text-align: start;
     font-size: 20px;
-    padding: 15px 20px;
+    padding: 45px 20px;
 }
 @media(max-width:768px){
     .p-seccion1 {
@@ -108,10 +127,17 @@ body {
         padding: 15px 20px;
     }
 }
+@media(max-width:480px){
+    .p-seccion1 {
+        text-align: center;
+        font-size: 18px;
+        padding: 25px 20px;
+    }
+}
 .boton-sec1 {
     background-color: #ba8d61;
     text-decoration: none;
-    margin: 10px 20px;
+    margin: 20px 20px;
     padding: 15px 35px;
     border: 1px solid #f2e9e9;
     border-radius: 50px;
@@ -126,6 +152,8 @@ body {
     }
 }
 
+
+
 /* FIN SECCION1 */
 
 
@@ -138,17 +166,15 @@ body {
     }
     ;
 }
-
 .banner {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-
 .info {
     padding: 0 10px;
+    text-align: center;
 }
-
 .info-text {
     color: #ffffff;
     font-size: 16px;
@@ -164,6 +190,15 @@ body {
         font-family: 'Oswald', sans-serif;
     }
 }
+@media(max-width:480px){
+    .info-text {
+        color: #ffffff;
+        font-size: 13px;
+        padding: 5px 0;
+        font-weight: 100;
+        font-family: 'Oswald', sans-serif;
+    }
+}
 i {
     color: #000000;
     &:hover{
@@ -171,6 +206,9 @@ i {
     }
 }
 /* FIN SECCION 2 */
+
+
+
 
 /* SECCION 3 */
 .seccion3 {
@@ -197,7 +235,6 @@ i {
         flex-wrap: wrap;
     }
 }
-
 .img-seccion3 {
     grid-area: "img";
     padding: 0 10px;
@@ -216,7 +253,6 @@ i {
     }
 
 }
-
 .img-s3 {
     height: 500px;
 }
@@ -228,11 +264,16 @@ i {
         padding-top: 50px;
     }
 }
-
 .h2-seccion3 {
     text-decoration: underline;
     color: #fff;
     font-size: 25px;
+}
+@media(max-width:480px){
+    .h2-seccion3 {
+        font-size: 20px;
+    }
+
 }
 .p-seccion3{
     color: #fff;
@@ -247,7 +288,6 @@ i {
     }
 
 }
-
 .boton-sec3 {
     background-color: #ba8d61;
     text-decoration: none;
@@ -299,14 +339,31 @@ i {
     justify-content: space-around;
     padding: 50px 0;
 }
+@media(max-width:480px){
+    .caja-seccion4{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
 .information-1{
     display: flex;
+    justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .h3-sec4{
     color: #fff;
     font-size: 70px;
     font-weight: 800;
+}
+@media(max-width:480px){
+    .h3-sec4{
+        color: #fff;
+        font-size: 40px;
+        font-weight: 400; 
+}
 }
 @media(max-width:768px){
     .h3-sec4{
